@@ -14,3 +14,4 @@ def login():
 @app.route('/register')
 def register():
  return "<h2>Register Page</h2>"
+conn = sqlite3.connect('database.db')
