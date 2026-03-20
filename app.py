@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 import sqlite3
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
