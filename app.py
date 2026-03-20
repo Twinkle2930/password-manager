@@ -1,4 +1,5 @@
 from flask import Flask
+import sqlite3
 
 app = Flask(__name__)
 
@@ -14,4 +15,6 @@ def login():
 @app.route('/register')
 def register():
  return "<h2>Register Page</h2>"
+ @app.route('/register', method ['GET','POST'])
+ def register():
 conn = sqlite3.connect('database.db')
